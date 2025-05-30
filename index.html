@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="fotos/59fa7310852584515541c86d4abc14c4.jpg" type="image/x-icon">
+  <title>Te amo muchito</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Música de fondo -->
+  <audio autoplay loop>
+    <source src="audio/Soy Luna Eres  Soy Luna  Songs.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <header>
+    <h1>Para el amor de mi vida <3 </h1>
+    <p>Gracias por estar conmigo y acompañarme todo este tiempo.</p>
+  </header>
+
+  <main class="gallery">
+    <div class="photo"><img src="fotos/1916256849029922816.webp" alt="Nosotros 1"></div>
+    <div class="photo"><img src="fotos/juntitosoo2.jpg" alt="Nosotros 2"></div>
+    <div class="photo"><img src="fotos/juntitooos.jpg" alt="Nosotros 3"></div>
+    <div class="photo"><img src="fotos/ojitos.jpg" alt="Nosotros 4"></div>
+  </main>
+
+  <footer>
+    <p>Te amo mucho Rocío, sos lo más lindo que tengo y me haces tan feliz. 
+    Te amo con todo mi corazoncito y te extraño tanto, tengo muchas ganas de estar junto a vos de nuevo y llenarte de besitos 💖.Sos tan hermosa y tierna, ya quiero poder verte de nuevo y tener más momentos lindos juntos. </p>
+
+  </footer>
+
+  <!-- Corazoncitos flotando -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
+
+</body>
+</html>
